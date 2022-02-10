@@ -13,6 +13,9 @@
 		A7B78E7F27B284B600D1534C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7B78E7D27B284B600D1534C /* Main.storyboard */; };
 		A7B78E8127B284B700D1534C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7B78E8027B284B700D1534C /* Assets.xcassets */; };
 		A7B78E8427B284B700D1534C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7B78E8227B284B700D1534C /* LaunchScreen.storyboard */; };
+		A7B78E8C27B2AD1F00D1534C /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B78E8B27B2AD1F00D1534C /* CardModel.swift */; };
+		A7B78E8E27B2AE0700D1534C /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B78E8D27B2AE0700D1534C /* Card.swift */; };
+		A7B78E9027B51E1100D1534C /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B78E8F27B51E1100D1534C /* CardCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		A7B78E8027B284B700D1534C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7B78E8327B284B700D1534C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7B78E8527B284B700D1534C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7B78E8B27B2AD1F00D1534C /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		A7B78E8D27B2AE0700D1534C /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		A7B78E8F27B51E1100D1534C /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 				A7B78E8027B284B700D1534C /* Assets.xcassets */,
 				A7B78E8227B284B700D1534C /* LaunchScreen.storyboard */,
 				A7B78E8527B284B700D1534C /* Info.plist */,
+				A7B78E8B27B2AD1F00D1534C /* CardModel.swift */,
+				A7B78E8D27B2AE0700D1534C /* Card.swift */,
+				A7B78E8F27B51E1100D1534C /* CardCollectionViewCell.swift */,
 			);
 			path = "TheCardGame-iosApp";
 			sourceTree = "<group>";
@@ -139,7 +148,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7B78E7C27B284B600D1534C /* ViewController.swift in Sources */,
+				A7B78E8C27B2AD1F00D1534C /* CardModel.swift in Sources */,
+				A7B78E8E27B2AE0700D1534C /* Card.swift in Sources */,
 				A7B78E7827B284B600D1534C /* AppDelegate.swift in Sources */,
+				A7B78E9027B51E1100D1534C /* CardCollectionViewCell.swift in Sources */,
 				A7B78E7A27B284B600D1534C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
