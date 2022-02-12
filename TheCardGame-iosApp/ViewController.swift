@@ -20,7 +20,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        cardsArray = model.getCards()
+        cardsArray = model.getCards()   //vraca niz
         
         collectionView.dataSource = self
         collectionView.delegate = self
@@ -36,14 +36,24 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         // Get a cell
-       let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CardCell", for: indexPath)
+       let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CardCell", for: indexPath) as! CardCollectionViewCell
+        
+        
+        let card = cardsArray[indexPath.row]
         
         //Configure it
-        
+        cell.configureCell(card: card)
         
         
         //return it
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+      let cell = collectionView.cellForItem(at: indexPath) as? CardCollectionViewCell
+        
+        cell?.flipUP()
     }
 
 
